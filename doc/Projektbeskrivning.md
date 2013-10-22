@@ -14,7 +14,7 @@ Kommer att testa på att använda mig utav CSS-preproccessors och jag valde LESS
 Begränsningar kommer finnas i projektet i form utav fejkad funktionalitet, då jag vill att användare ska kunna kommentera blogginlägg, betygsätta appar och använda formulär så kommer det att få fejkas.
 
 ## Förstudier
-Har studerat liknande sidor och försökt bygga mig en uppfattning av hur dom är utformade och med det skaffat mig en uppfattning hur jag vill att min webbplats ska se ut. Sen har jag även läst på lite om CSS-preproccessors, speciellt LESS då i detta fall då det är det jag tänker använda mig utav.
+Har studerat liknande sidor och försökt bygga mig en uppfattning av hur dom är utformade och med det skaffat mig en uppfattning hur jag vill att min webbplats ska se ut. Sen har jag även läst på om CSS-preproccessors, speciellt LESS då i detta fall då det är det jag tänker använda mig utav.
 
 ## Tidsplanering
 [Tidsplanering](https://docs.google.com/spreadsheet/ccc?key=0AqfOvzC0bPfCdGNsWHBsSlhHeHdHTUR1Y0w2VXhGUmc#gid=0)
