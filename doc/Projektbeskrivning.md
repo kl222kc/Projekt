@@ -1,29 +1,22 @@
-
 # Projektnamn här
 Projektmedlemmar: 
-[tstjostudent](https://github.com/tstjostudent), [xx222yy](https://github.com/tstjostudent), [yy222xx](https://github.com/tstjostudent)
-
-*Lista alla medlemmar ovan. Ni behöver inte ange fullständiga namn utan länk till GitHub-konto räcker.*
+[kl222kc](https://github.com/kl222kc)
 
 [Körbar version av projektet](http://tstjostudent.github.io/Projektet)
 
-*Länka till en körbar version av projektet ovan. Exempelvis kan ni skapa en gh-pages-branch på samma sätt som i Uppgift 1.1, laboration 1.*
-
 ## Beskrivning av projektet
-*En kort och koncis beskrivning av projektet. Vad är det ni vill skapa? Varför? Hur fick ni idén?*
+Jag ska göra ett webbplats som ska agera som en portal för appar till windows phone os. Den kommer innehålla blogg med nyheter, rekomderade appar med mera. Anledningen till att jag valde att göra just detta då jag finner det intressant specielt då jag nyligen själv har införskaffat med en telefon med windows phone.
 
 ## Tekniker
-*Vilka tekniker kommer att användas? Kommer ni att använda några ramverk? CSS-preprocessors?*
+Kommer att testa på att använda mig utav CSS-preproccessors och jag valde LESS till detta, i övrigt kommer jag använda mig utav samma tekniker som vi gjort i kursen.
 
 ## Begränsningar
-*Eventuella begränsningar i projektet. Kanske kommer viss funktionalitet att fejkas eftersom ni inte besitter kunskaper att skapa detta ännu?*
+Begränsningar kommer finnas i projektet i form utav fejkad funktionalitet. Då jag att användare ska kunna kommentera bloginlägg, betygsätta appar och använda formulär så kommer det att få fejkas.
+
 
 ## Förstudier
-*Eventuellt redan existerande prototyper, användarundersökningar etc. Kanske gör ni om en befintlig webbplats? Beskriv då det här.*
-
-## *Förändra*
-*Lägg gärna till egna rubriker eller förändra strukturen så att den passar ert projekt.*
+Har studerat lite liknande sidor och försökt bygga mig en uppfattning av hur dom bäst är designade och försökt skapa mig lite egna. Sen har jag även pluggat på lite om CSS-preproccessors, specielt LESS då i detta fall då det är det jag tänker använda mig utav.
 
 ## Tidsplanering
-*Länka till tidsplaneringen här, eller fäll in som en bild.*
+[Tidsplanering](https://docs.google.com/spreadsheet/ccc?key=0AqfOvzC0bPfCdGNsWHBsSlhHeHdHTUR1Y0w2VXhGUmc#gid=0)
 
