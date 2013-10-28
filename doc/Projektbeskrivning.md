@@ -5,10 +5,10 @@ Projektmedlemmar:
 [Körbar version av projektet](#)
 
 ## Beskrivning av projektet
-Jag ska göra en webbplats som ska agera som en portal för appar till det mobila operativsystem Windows Phone. Den kommer innehålla en blogg funktion där nyheter och app förslag kommer att postas, en sida där det listas rekommenderade appar och ett formulär där användare kan tipsa om appar. Anledningen till att jag valde att göra just detta är att jag finner detta intressant speciellt då jag nyligen själv har införskaffat mig en Windows telefon.
+Jag ska göra en webbplats som ska agera som en portal för appar till det mobila operativsystem Windows Phone. Den kommer innehålla en blogg funktion där nyheter och app förslag kommer att postas, en sida där det listas rekommenderade appar, ett formulär där användare kan tipsa om appar och varje app kommer ha sin egen sida med information om appen med mera. Anledningen till att jag valde att göra just detta är att jag finner detta intressant speciellt då jag nyligen själv har införskaffat mig en Windows telefon.
 
 ## Tekniker
-Kommer att testa på att använda mig utav CSS-preproccessors och jag valde LESS till detta, i övrigt kommer jag använda mig utav samma tekniker som vi gjort i kursen.
+Kommer att testa på att använda mig utav CSS-preproccessors och jag valde LESS till detta, i övrigt kommer jag använda mig utav samma tekniker som vi gjort i kursen fast jag kommer köra på egen webbserver istället för cloud 9.
 
 ## Begränsningar
 Begränsningar kommer finnas i projektet i form utav fejkad funktionalitet, då jag vill att användare ska kunna kommentera blogginlägg, betygsätta appar och använda formulär så kommer det att få fejkas.
