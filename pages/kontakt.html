@@ -17,7 +17,7 @@
 			<ul>
 				<li><a href="../index.html">Start</a></li>
 				<li><a href="apps.html">Appar</a></li>
-				<li><a href="kontakt.html">Tipsa Oss</a></li>
+				<li><a href="kontakt.html">Kontakta Oss</a></li>
 			<ul>	
 	</nav>
 	
@@ -32,7 +32,41 @@
 	<main>
 
 	<article>
-	<h2>Tipsa Oss<h2>
+
+<form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+
+        <h1>Kontaktformulär</h1>
+        <div id="input">
+        <label>
+        <span>Ärendetyp</span>  
+        <select>
+           <option value="fråga">Fråga</option>
+           <option value="fråga">Tipsa Oss</option>
+           <option value="fråga">Övrigt</option>
+        </select>
+        </label>
+
+        <label>
+        <span>Rubrik</span><input id="rubrik" type="text" name="rubrik" />
+        </label>
+		
+		<label>
+        <span>Email Address</span><input id="email" type="text" name="email" />
+        </label>
+		
+        <label>
+        <span>Meddelande</span><textarea id="message" name="message"></textarea>
+        </label>
+
+        </div>
+
+        <div id="formbutton">
+        <label>
+        <input type="submit" name="submit" value="Skicka">
+        </label>
+        </div>
+</form>
+	
 	</article>
 	
 	<aside>
