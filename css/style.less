@@ -29,6 +29,10 @@ padding-top: 10px;
 padding-bottom: 10px;
 }
 
+p {
+margin: 1em 0px;
+}
+
 header h1 {
 text-align: center;
 color: @white;
@@ -45,7 +49,7 @@ height: 120px;
 }
 
 footer p {
-margin-top: 40px;
+margin-top: 20px;
 text-align: center;
 }
 
@@ -55,8 +59,12 @@ width: 95%;
 margin: auto;
 }
 
-aside {
-display: none;
+article {
+margin-top: 20px;
+}
+
+section {
+margin-top: 20px;
 }
 
 nav#socialmedia {
@@ -95,3 +103,69 @@ nav#mainnav a {
 nav#mainnav a:hover {
     background-color: @black;
 }
+
+article h2 {
+border-top: 1px solid @nice-blue;
+border-bottom: 1px solid @nice-blue;
+margin-bottom: 10px;
+padding: 5px;
+}
+
+article h3 {
+margin-top: 10px;
+margin-bottom: 5px;
+padding: 2px;
+}
+
+section h2 {
+border-top: 1px solid @nice-blue;
+border-bottom: 1px solid @nice-blue;
+margin-bottom: 10px;
+padding: 5px;
+}
+
+section h3 {
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 2px;
+}
+
+.right {
+float: right;
+}
+
+.left {
+float: left;
+}
+
+.blogpost img {
+width: 100px;
+margin: 8px 0px 5px 5px;
+}
+
+.blogpost {
+border-bottom: 1px solid @black;
+min-height: 150px;
+}
+
+article a {
+text-decoration:none;
+}
+
+section a {
+text-decoration:none;
+}
+
+.app_post {
+text-align: center;
+}
+
+/* a links
+-------------------------------------------------------- 
+
+*/
+a {  color: inherit; outline:0;}
+a:link    { }
+a:visited { }
+a:hover   { text-decoration:none; color:#000; }
+a:active  { }
