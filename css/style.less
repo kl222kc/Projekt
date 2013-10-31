@@ -3,8 +3,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 @nice-blue: #5B83AD;
 @light-blue: (@nice-blue + #111);
-@white: (#fff);
-@black:  (#000);
+@white: #fff;
+@black:  #000;
+@light-grey: #fafafb;
+
+.border-radius(@radius:5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
 
 /* html5 elements
 -------------------------------------------------------- 
@@ -54,7 +61,6 @@ text-align: center;
 }
 
 main {
-background-color: @white;
 width: 95%;
 margin: auto;
 }
@@ -177,3 +183,54 @@ a:link    { }
 a:visited { }
 a:hover   { text-decoration:none; color:#000; }
 a:active  { }
+
+/*
+// Forms
+*/
+
+
+input, select {
+display:block;
+border: 1px solid #999;
+margin-bottom: 5px;
+}
+
+textarea#message {
+width: 95%;
+height:150px;
+display:block;
+margin-bottom: 5px;
+}
+
+#input input, select {
+    width: 95%;
+}
+
+form    {
+width:90%;
+padding:10px;
+font-weight: bold;
+margin-bottom: 20px;
+margin: auto;
+border: 1px solid #C0C0C0;
+margin-top: 20px;
+.border-radius(10px);
+background-color: #F8F8F8;
+}
+
+
+#formbutton input {
+margin:auto;
+margin-top: 10px;
+width:150px;
+text-align: center;
+background: @light-blue;
+color:#fff;
+height:30px;
+.border-radius(5px);
+font-weight: bold;
+}
+
+#formbutton input:hover {
+    background-color: @black;
+}
