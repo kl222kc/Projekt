@@ -4,45 +4,53 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>WPApps</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet/less" type="text/css" href="../css/style.less" />
+		<script src="../css/less.js" type="text/javascript"></script>
     </head>
     <body>
     <div id="container">
 	
-	<header>
+	<header id="mainheader">
+	
 	<h1>WPApps</h1>
-	</header>
 	
 	<nav id="mainnav">
-			<ul>
-				<li><a href="../index.html">Start</a></li>
-				<li><a href="apps.html">Appar</a></li>
-				<li><a href="kontakt.html">Kontakta Oss</a></li>
-			<ul>	
+                        <ul>
+                                <li><a href="../index.html">Start</a></li>
+								<li><a href="blog.html">Blogg</a></li>
+                                <li><a href="apps.html">Appar</a></li>
+                                <li><a href="kontakt.html">Kontakta Oss</a></li>
+                        <ul>        
 	</nav>
-	
-	<nav id="socialmedia">
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Youtube</a></li>
-			<ul>	
-	</nav>
+
+	</header>
+
+
 	
 	<main>
-
+	
+	<nav id="appnav">
+                        <ul>
+                                <li><a href="appar/top.html">Top 10</a></li>
+								<li><a href="appar/spel.html">Spel</a></li>
+                                <li><a href="appar/appar.html">Appar</a></li>
+                        <ul>        
+	</nav>
+	
 	<article>
-	<h2>Appar<h2>
 	
-	<a href="../pics/1.png" title="1"><img src="../pics/1.png" alt="1"/></a>
-	<a href="../pics/1.jpg" title="1"><img src="../pics/2.png" alt="1"/></a>
-	<a href="../pics/1.jpg" title="1"><img src="../pics/3.png" alt="1"/></a>
-	<a href="../pics/1.jpg" title="1"><img src="../pics/4.png" alt="1"/></a>
-	<a href="../pics/1.jpg" title="1"><img src="../pics/5.png" alt="1"/></a>
-	<a href="../pics/1.jpg" title="1"><img src="../pics/6.png" alt="1"/></a>
-	<a href="../pics/1.jpg" title="1"><img src="../pics/7.png" alt="1"/></a>
-	<a href="../pics/1.jpg" title="1"><img src="../pics/8.png" alt="1"/></a>
-	
+		<a style="display:block" href="pics/2.png">
+		<div class="app_post">
+		<h3>Dagens App</h3>
+		<img src="../pics/5.png"" alt="1"/>
+		<div class="rating">
+		<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+		</div>
+		<h4>Appnamn</h4>
+		<span>by Disney</span>
+		</div>
+		</a>
+		
 	</article>
 	
 	<aside>
@@ -51,8 +59,18 @@
 	
 	</main>
 	
+	
+
+
+	
 	<footer>
-		<span>Copyright © WPApps</span>
+		<nav id="socialmedia">
+				<p>Besök Oss Gärna Här</p>
+				<a href="#"><img src="../pics/facebook.png" alt="1"/></a>
+				<a href="#"><img src="../pics/twitter.png" alt="1"/></a>
+				<a href="#"><img src="../pics/youtube.png" alt="1"/></a>
+	</nav>
+		<p>Copyright © WPApps</p>
 	</footer>
 	
 	</div>
