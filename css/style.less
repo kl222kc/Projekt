@@ -68,12 +68,13 @@ color: @white;
 
 header#mainheader {
 background-color: @nice-blue;
+height: 40px;
 }
 
 footer {
 background-color: @nice-blue;
 color: @white;
-height: 120px;
+
 }
 
 footer p {
@@ -109,6 +110,8 @@ margin-top: 4px;
 
 nav#mainnav {
     text-align: center;
+	background-color: @nice-blue;
+	margin-top: 40px;
 }
 
 aside {
@@ -128,7 +131,7 @@ nav#mainnav a {
     width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-top: 1px dotted @white;
+	border-bottom: 1px dotted @white;
 }
 
 nav#mainnav a:hover {
@@ -285,22 +288,19 @@ nav#appnav a:hover {
 border-top: 10px solid @light-blue;
 }
 
-article#app {
-min-height: 300px;
-}
-
 article#app img {
 width: 100%;
 margin-bottom: 5px;
 }
 
 #gallery {
-margin-top: 80px;
+margin-top: 20px;
 text-align: center;
 }
 
 #gallery img {
-width: 20%;
+margin-top: 5px;
+width: 100px;
 }
 
 table {
@@ -340,8 +340,8 @@ padding-bottom: 5px;
 	padding: 8px 16px;
 	text-decoration: none;
 	.text-shadow;
-    background-color: @green;
-    border: 1px solid rgb( 33, 126, 74 );
+    background-color: #5bacad;
+    border: 1px solid #5bad9a;
 	.transition (background-color 0.1s linear);
 	 margin: 3px;
 }
@@ -352,5 +352,26 @@ margin: 0;
 }
 
 #sort a:hover {
-background-color: @nice-green;
+background-color: #8ec6c7;
+}
+
+a.to_nav {
+    float: right;
+    color: @black;
+    padding: 0 10px;
+    font-weight: bold;
+    line-height: 22px;
+	font-size: 32px;
+	margin-top: -10px;
+}
+
+h1.logo a {
+    color: @white;
+	text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: 0.2em;
+	margin-left: 5px;
 }
