@@ -6,11 +6,32 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 @white: #fff;
 @black:  #000;
 @light-grey: #fafafb;
+@baby-blue: #DDECEF;
+@green: #2b9969;
+@nice-green: #46cb91;
+@grey: #c0c0c0;
 
 .border-radius(@radius:5px) {
   -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
           border-radius: @radius;
+}
+
+.box-shadow(@shadows) {
+    -webkit-box-shadow: @shadows;
+    -moz-box-shadow: @shadows;
+    box-shadow: @shadows;
+}
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
 }
 
 /* html5 elements
@@ -115,10 +136,12 @@ nav#mainnav a:hover {
 }
 
 article h2 {
-border-top: 1px solid @nice-blue;
-border-bottom: 1px solid @nice-blue;
+border: 1px solid @grey;
+background-color: @light-blue;
 margin-bottom: 10px;
 padding: 5px;
+text-align: center;
+color: @white;
 }
 
 article h3 {
@@ -128,10 +151,12 @@ padding: 2px;
 }
 
 section h2 {
-border-top: 1px solid @nice-blue;
-border-bottom: 1px solid @nice-blue;
+border: 1px solid @grey;
+background-color: @light-blue;
 margin-bottom: 10px;
 padding: 5px;
+text-align: center;
+color: @white;
 }
 
 section h3 {
@@ -260,15 +285,6 @@ nav#appnav a:hover {
 border-top: 10px solid @light-blue;
 }
 
-#sort {
-text-align: center;
-margin-bottom: 10px;
-}
-
-#sort a {
-margin-left: 10px;
-}
-
 article#app {
 min-height: 300px;
 }
@@ -302,4 +318,39 @@ padding: 1px;
 tr.alt td 
 {
 background-color: @light-blue;
+}
+
+#sort {
+text-align: center;
+margin-bottom: 10px;
+margin-top: 10px;
+width: 100%;
+padding-top: 5px;
+padding-bottom: 5px;
+.border-radius(10px);
+}
+
+#sort a {
+	.border-radius(4px);
+	.box-shadow(~"inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08)");
+	color: @white;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 8px 16px;
+	text-decoration: none;
+	.text-shadow;
+    background-color: @green;
+    border: 1px solid rgb( 33, 126, 74 );
+	.transition (background-color 0.1s linear);
+	 margin: 3px;
+}
+
+#sort p {
+font-size: 20px;
+margin: 0;
+}
+
+#sort a:hover {
+background-color: @nice-green;
 }
