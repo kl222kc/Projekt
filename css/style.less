@@ -1,20 +1,33 @@
-/*RESET*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+/**
+ * Style with LESS.
+ */
 
-@nice-blue: #5B83AD;
-@light-blue: (@nice-blue + #111);
-@white: #fff;
-@black:  #000;
-@light-grey: #fafafb;
-@baby-blue: #DDECEF;
-@green: #2b9969;
-@nice-green: #46cb91;
-@grey: #c0c0c0;
+/** --------------------------------------------------------------
+ * Reset
+ *
+ */
+ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+ a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+ small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+ table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
+ figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+ time,mark,audio,video{margin:0;padding:0;border:0;font-size:100.01%;font:inherit;vertical-align:baseline;}
+ body{line-height:1;}
+ ol,ul{list-style: none;}
+ blockquote,q{quotes:none;}
+ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+ table{border-collapse:collapse;border-spacing:0;}
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
-.border-radius(@radius:5px) {
+/** --------------------------------------------------------------
+ * CSS3 mixins.
+ * 
+ */
+
+ .border-radius(@radius:5px) {
   -webkit-border-radius: @radius;
-     -moz-border-radius: @radius;
-          border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
 }
 
 .box-shadow(@shadows) {
@@ -34,88 +47,138 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	text-shadow: @string;
 }
 
-/* html5 elements
--------------------------------------------------------- 
+/** --------------------------------------------------------------
+ * Colors.
+ * 
+ */
 
-*/
-header,footer,nav,article,section,aside,figure,figcaption,main{display:block;}
+ @nice-blue: #5B83AD;
+ @light-blue: (@nice-blue + #111);
+ @white: #fff;
+ @black:  #000;
+ @light-grey: #fafafb;
+ @baby-blue: #DDECEF;
+ @green: #2b9969;
+ @nice-green: #46cb91;
+ @grey: #c0c0c0;
+ 
+/** --------------------------------------------------------------
+ * HTML5 elements.
+ *
+ */
+ 
+ header,footer,nav,article,section,aside,figure,figcaption,main{display:block;}
 
-html, body {
+/** --------------------------------------------------------------
+ * Typography.
+ * 
+ */
+
+ h1 { font-size: 2em; }
+ h2 { font-size: 1.5em; }
+ h3 { font-size: 1.17em; }
+ h5 { font-size: .83em; }
+ h6 { font-size: .75em; }
+
+ h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 1em 0px;
+}
+
+h1.logo a {
+    color: @white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: 0.2em;
+    margin-left: 5px;
+}
+
+/** --------------------------------------------------------------
+ * Page layout.
+ * 
+ */
+
+ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
-
-h1 {
-padding-top: 10px;
-padding-bottom: 10px;
+main {
+    width: 95%;
+    margin: auto;
 }
 
-p {
-margin: 1em 0px;
-}
+/** --------------------------------------------------------------
+ * Links.
+ *
+ */
+ a {  color: inherit; outline:0;}
+ a:link    { }
+ a:visited { }
+ a:hover   { text-decoration:none; color:#000; }
+ a:active  { }
 
-header h1 {
-text-align: center;
-color: @white;
+/** --------------------------------------------------------------
+ * Header.
+ * 
+ */
+
+ header h1 {
+    text-align: center;
+    color: @white;
 }
 
 header#mainheader {
-background-color: @nice-blue;
-height: 40px;
+    background-color: @nice-blue;
+    height: 40px;
 }
 
-footer {
-background-color: @nice-blue;
-color: @white;
+/** --------------------------------------------------------------
+ * Footer.
+ * 
+ */
 
+ footer {
+    background-color: @nice-blue;
+    color: @white;
 }
 
 footer p {
-margin-top: 20px;
-text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
-main {
-width: 95%;
-margin: auto;
-}
 
-article {
-margin-top: 20px;
-}
+/** --------------------------------------------------------------
+ * Navbar.
+ * 
+ */
 
-aside {
-margin-top: 20px;
-}
-
-nav#socialmedia {
-text-align: center;
-background-color: @nice-blue;
+ nav#socialmedia {
+    text-align: center;
+    background-color: @nice-blue;
 }
 
 
 
 nav#socialmedia a {
-margin-right: 10px;
-display: inline-block;
-margin-top: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 4px;
 }
 
 nav#mainnav {
     text-align: center;
-	background-color: @nice-blue;
-	margin-top: 40px;
-}
-
-aside {
-display: none;
+    background-color: @nice-blue;
+    margin-top: 40px;
 }
 
 nav#mainnav .active {
@@ -129,230 +192,13 @@ nav#mainnav a {
     font-size: 16px;
     display: block;
     width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-bottom: 1px dotted @white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted @white;
 }
 
 nav#mainnav a:hover {
     background-color: @black;
-}
-
-article h2 {
-border: 1px solid @grey;
-background-color: @light-blue;
-margin-bottom: 10px;
-padding: 5px;
-text-align: center;
-color: @white;
-}
-
-article h3 {
-margin-top: 10px;
-margin-bottom: 5px;
-padding: 2px;
-}
-
-aside h2 {
-border: 1px solid @grey;
-background-color: @light-blue;
-margin-bottom: 10px;
-padding: 5px;
-text-align: center;
-color: @white;
-}
-
-aside h3 {
-margin-top: 10px;
-margin-bottom: 10px;
-padding: 2px;
-}
-
-.right {
-float: right;
-}
-
-.left {
-float: left;
-}
-
-.blogpost img {
-width: 100px;
-margin: 8px 0px 5px 5px;
-}
-
-.blogpost {
-border-bottom: 1px solid @grey;
-min-height: 150px;
-}
-
-#blog span {
-font-style:italic;
-}
-
-article a {
-text-decoration:none;
-}
-
-aside a {
-text-decoration:none;
-}
-
-.app_post {
-text-align: center;
-margin-bottom: 10px;
-}
-
-/* a links
--------------------------------------------------------- 
-
-*/
-a {  color: inherit; outline:0;}
-a:link    { }
-a:visited { }
-a:hover   { text-decoration:none; color:#000; }
-a:active  { }
-
-/*
-// Forms
-*/
-
-
-input, select {
-display:block;
-border: 1px solid #999;
-margin-bottom: 5px;
-}
-
-textarea#message {
-width: 95%;
-height:150px;
-display:block;
-margin-bottom: 5px;
-}
-
-#input input, select {
-    width: 95%;
-}
-
-form    {
-width:90%;
-padding:10px;
-font-weight: bold;
-margin-bottom: 20px;
-margin: auto;
-border: 1px solid #C0C0C0;
-margin-top: 20px;
-.border-radius(10px);
-background-color: #F8F8F8;
-}
-
-
-#formbutton input {
-margin:auto;
-margin-top: 10px;
-width:150px;
-text-align: center;
-background: @light-blue;
-color:#fff;
-height:30px;
-.border-radius(5px);
-font-weight: bold;
-}
-
-#formbutton input:hover {
-    background-color: @black;
-}
-
-nav#appnav  {
-margin-top: 10px;
-display:inline-block;
-text-align:center;
-width: 100%;
-}
-
-nav#appnav li {
-display:inline;
-
-}
-
-nav#appnav a {
-display:inline-block;
-padding:10px;
-border-top: 10px solid @black;
-margin-left: 15px;
-margin-right: 15px;
-}
-
-nav#appnav a:hover {
-border-top: 10px solid @light-blue;
-}
-
-article#app img {
-width: 100%;
-margin-bottom: 5px;
-}
-
-#gallery {
-margin-top: 20px;
-text-align: center;
-}
-
-#gallery img {
-margin-top: 5px;
-width: 100px;
-}
-
-table {
-font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-width:100%;
-}
-
-td {
-background-color: @nice-blue;
-color: @white;
-border:1px solid @black;
-padding: 1px;
-}
-
-tr.alt td 
-{
-background-color: @light-blue;
-}
-
-#sort {
-text-align: center;
-margin-bottom: 10px;
-margin-top: 10px;
-width: 100%;
-padding-top: 5px;
-padding-bottom: 5px;
-.border-radius(10px);
-}
-
-#sort a {
-	.border-radius(4px);
-	.box-shadow(~"inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08)");
-	color: @white;
-	display: inline-block;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	padding: 8px 16px;
-	text-decoration: none;
-	.text-shadow;
-    background-color: #5bacad;
-    border: 1px solid #5bad9a;
-	.transition (background-color 0.1s linear);
-	 margin: 3px;
-}
-
-#sort p {
-font-size: 20px;
-margin: 0;
-}
-
-#sort a:hover {
-background-color: #8ec6c7;
 }
 
 a.to_nav {
@@ -361,21 +207,269 @@ a.to_nav {
     padding: 0 10px;
     font-weight: bold;
     line-height: 22px;
-	font-size: 32px;
-	margin-top: -10px;
+    font-size: 32px;
+    margin-top: -10px;
 }
 
-h1.logo a {
+/** --------------------------------------------------------------
+ * Navigation for apps.
+ * 
+ */
+
+ nav#appnav  {
+    margin-top: 10px;
+    display:inline-block;
+    text-align:center;
+    width: 100%;
+}
+
+nav#appnav li {
+    display:inline;
+
+}
+
+nav#appnav a {
+    display:inline-block;
+    padding:10px;
+    border-top: 10px solid @black;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav#appnav a:hover {
+    border-top: 10px solid @light-blue;
+}
+
+#sort a {
+    .border-radius(4px);
+    .box-shadow(~"inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08)");
     color: @white;
-	text-transform: uppercase;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
     text-decoration: none;
-    font-size: 20px;
-    line-height: 22px;
-    float: left;
-    letter-spacing: 0.2em;
-	margin-left: 5px;
+    .text-shadow;
+    background-color: #5bacad;
+    border: 1px solid #5bad9a;
+    .transition (background-color 0.1s linear);
+    margin: 3px;
+}
+
+#sort a:hover {
+    background-color: #8ec6c7;
+}
+
+/** --------------------------------------------------------------
+ * Article (main content)
+ * 
+ */
+
+ article {
+    margin-top: 20px;
+}
+
+article h2 {
+    border: 1px solid @grey;
+    background-color: @light-blue;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    color: @white;
+}
+
+article h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+article a {
+    text-decoration:none;
+}
+
+/** --------------------------------------------------------------
+ * Section (other content)
+ * 
+ */
+
+ aside a {
+    text-decoration:none;
+}
+
+aside {
+    margin-top: 20px;
+}
+
+
+
+aside {
+    display: none;
+}
+
+
+aside h2 {
+    border: 1px solid @grey;
+    background-color: @light-blue;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    color: @white;
+}
+
+aside h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
 }
 
 aside#index {
-display: inline;
+    display: inline;
+}
+
+/** --------------------------------------------------------------
+ * Blogpage
+ * 
+ */
+
+ .blogpost img {
+    width: 100px;
+    margin: 8px 0px 5px 5px;
+}
+
+.blogpost {
+    border-bottom: 1px solid @grey;
+    min-height: 150px;
+}
+
+#blog span {
+    font-style:italic;
+}
+
+/** --------------------------------------------------------------
+ * Apppage
+ * 
+ */
+
+ .app_post {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article#app img {
+    margin-bottom: 5px;
+}
+
+#gallery {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#gallery img {
+    margin-top: 5px;
+    width: 100px;
+}
+
+/** --------------------------------------------------------------
+ * Forms.
+ * 
+ */
+
+ input, select {
+    display:block;
+    border: 1px solid #999;
+    margin-bottom: 5px;
+}
+
+textarea#message {
+    width: 95%;
+    height:150px;
+    display:block;
+    margin-bottom: 5px;
+}
+
+#input input, select {
+    width: 95%;
+}
+
+form    {
+    width:90%;
+    padding:10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: auto;
+    border: 1px solid #C0C0C0;
+    margin-top: 20px;
+    .border-radius(10px);
+    background-color: #F8F8F8;
+}
+
+
+#formbutton input {
+    margin:auto;
+    margin-top: 10px;
+    width:150px;
+    text-align: center;
+    background: @light-blue;
+    color:#fff;
+    height:30px;
+    .border-radius(5px);
+    font-weight: bold;
+}
+
+#formbutton input:hover {
+    background-color: @black;
+}
+
+
+/** --------------------------------------------------------------
+ * Tables.
+ * 
+ */
+
+ table {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    width:100%;
+}
+
+td {
+    background-color: @nice-blue;
+    color: @white;
+    border:1px solid @black;
+    padding: 1px;
+}
+
+tr.alt td 
+{
+    background-color: @light-blue;
+}
+
+#sort {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .border-radius(10px);
+}
+
+/** --------------------------------------------------------------
+ * Classes.
+ * 
+ */
+
+ img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
 }
