@@ -67,6 +67,7 @@
  @green: #2b9969;
  @nice-green: #46cb91;
  @grey: #c0c0c0;
+ @blue: #2e4078;
 
 /** --------------------------------------------------------------
  * Typography.
@@ -90,19 +91,38 @@
  	margin-bottom: 20px;
  }
 
+h1.logo a {
+ font-family: Garamond, serif;
+line-height: 1em;
+color: @blue;
+font-weight:bold;
+font-size: 134px;
+float: none;
+}
+
 /** --------------------------------------------------------------
  * Page layout.
  * 
  */
 
+  body, html {
+ 	background-color: #C6CDD5;
+ }
+
+header#mainheader {
+    background: none;
+    height: 100px;
+}
+
  main {
  	overflow: hidden;
  	margin: 0 auto;
- 	margin-top: 20px;
+ 	margin-top: 100px;
  	width: 700px;
  	border: 1px solid @grey;
  	padding: 1em;
  	.box-shadow(7px 7px 5px -6px #999, -7px 7px 5px -6px #999;);
+ 	background-color: @white;
  }
 
  article#blog, article#app {
@@ -118,7 +138,7 @@
  	display: block;
  }
 
-/** --------------------------------------------------------------
+ /** --------------------------------------------------------------
  * Navbar.
  * 
  */
@@ -129,9 +149,14 @@
 
  nav#mainnav {
  	position: absolute;
- 	top: -40px;
- 	right: 5px;
- 	background: none;
+ 	background-color: @nice-blue;
+ 	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 100px;
+	left: 0;
+	right: 0;
+	text-align: left;
  }
  nav#mainnav li {
  	display: inline-block;
@@ -143,10 +168,22 @@
  	border-bottom: none;
  	padding: 0;
  	font-size: 20px;
- 	width: 120px;
+ 	width: 130px;
  	padding-top: 10px;
  	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+	margin-right: -5px;
  }
+
+nav#mainnav > ul > li:first-child {
+border-left: none;
+}
+
+nav#mainnav > ul > li {
+	border-left: 1px dotted @white;
+}
 
  nav#mainnav a.top{
  	display: none;
