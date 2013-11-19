@@ -80,7 +80,7 @@
  	margin-bottom: 20px;
  }
 
- aside h2 {
+ section {
  	width: 200px;
  	margin: auto;
  	margin-bottom: 20px;
@@ -118,25 +118,31 @@ header#mainheader {
  	overflow: hidden;
  	margin: 0 auto;
  	margin-top: 100px;
- 	width: 960px;
- 	border: 1px solid @grey;
+ 	width: 1000px;
+ 	background: none;
+ }
+
+ article#start, article#main {
+ 	width: 655px;
+ 	float:left;
+ 	background-color: @white;
+ 	.box-shadow(7px 7px 5px -6px #999, -7px 7px 5px -6px #999;);
+ 	padding: 1em;
+ 	min-height: 500px;
+ }
+
+ section {
+ 	width: 250px;
+ 	float: left;
+ 	margin-left: 30px;
+ 	display: block;
+ 	background-color: @white;
  	padding: 1em;
  	.box-shadow(7px 7px 5px -6px #999, -7px 7px 5px -6px #999;);
- 	background-color: @white;
  }
 
- article#start, article#app {
- 	width: 650px;
- 	float:left;
- 	border-right: 1px solid @grey;
- }
 
- aside#index,aside#app {
- 	width: 280px;
- 	float: left;
- 	margin-left: 20px;
- 	display: block;
- }
+
 
  /** --------------------------------------------------------------
  * Navbar.
@@ -150,7 +156,7 @@ header#mainheader {
  nav#mainnav {
  	position: absolute;
  	background-color: @nice-blue;
- 	width: 980px;
+ 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	top: 100px;
@@ -206,6 +212,7 @@ nav#mainnav > ul > li {
  */
 
  form {
+ 	margin: 0 auto;
  	width: 500px;
  }
 
@@ -222,6 +229,15 @@ nav#mainnav > ul > li {
  	width: 300px;
  }
 
- aside#app img {
+section#app img {
  	width: 200px !important;
  }
+
+  /** --------------------------------------------------------------
+ * Image Slider controller
+ * 
+ */
+
+#active label {
+	display: inline-block;
+}

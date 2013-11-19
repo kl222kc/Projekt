@@ -303,22 +303,34 @@ article a {
  * 
  */
 
- aside a {
+section a {
     text-decoration:none;
 }
 
-aside {
+section {
     margin-top: 20px;
 }
 
+ section#blog a {
+    text-align: center;
+    color: @green;
+    font-size: 18px;
+ }
 
+ section#blog li {
+    margin-bottom: 20px;
+ }
 
-aside {
-    display: none;
-}
+ section#blog {
+    text-align: center;
+ }
 
+ section#blog a:hover {
+    text-decoration: underline;
+    color: @nice-green;
+ }
 
-aside h2 {
+section h2 {
     border: 1px solid @grey;
     background-color: @light-blue;
     margin-bottom: 10px;
@@ -327,15 +339,12 @@ aside h2 {
     color: @white;
 }
 
-aside h3 {
+section h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 2px;
 }
 
-aside#index {
-    display: inline;
-}
 
 /** --------------------------------------------------------------
  * Blogpage

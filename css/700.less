@@ -80,8 +80,8 @@
  	margin-bottom: 20px;
  }
 
- aside h2 {
- 	width: 200px;
+ section h2 {
+ 	width: 180px;
  	margin: auto;
  	margin-bottom: 20px;
  }
@@ -119,23 +119,29 @@ header#mainheader {
  	margin: 0 auto;
  	margin-top: 100px;
  	width: 700px;
- 	border: 1px solid @grey;
  	padding: 1em;
- 	.box-shadow(7px 7px 5px -6px #999, -7px 7px 5px -6px #999;);
- 	background-color: @white;
  }
 
- article#start, article#app {
- 	width: 440px;
+ article#start, article#main {
+ 	width: 415px;
  	float:left;
- 	border-right: 1px solid @grey;
+ 	 background-color: @white;
+ 	.box-shadow(7px 7px 5px -6px #999, -7px 7px 5px -6px #999;);
+ 	padding: 1em;
  }
 
- aside#index,aside#app {
- 	width: 220px;
+ section {
+ 	width: 200px;
  	float: left;
  	margin-left: 20px;
  	display: block;
+	background-color: @white;
+ 	.box-shadow(7px 7px 5px -6px #999, -7px 7px 5px -6px #999;);
+ 	padding: 1em;
+ }
+
+ section img {
+ 	width: 180px;
  }
 
  /** --------------------------------------------------------------
@@ -206,7 +212,8 @@ nav#mainnav > ul > li {
  */
 
  form {
- 	width: 500px;
+ 	margin: 0 auto;
+ 	width: 400px;
  }
 
 /** --------------------------------------------------------------
@@ -222,7 +229,7 @@ nav#mainnav > ul > li {
  	width: 300px;
  }
 
- aside#app img {
+ section#app img {
  	width: 200px !important;
  }
 
