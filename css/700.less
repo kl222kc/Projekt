@@ -6,7 +6,7 @@
  * Reset
  *
  */
- html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+ html,body,div,span,applet,object,iframe,h1,blockquote,pre,
  a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
  small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
  table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
@@ -17,7 +17,7 @@
  blockquote,q{quotes:none;}
  blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
  table{border-collapse:collapse;border-spacing:0;}
- html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+ html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
 /** --------------------------------------------------------------
  * CSS3 mixins.
@@ -125,14 +125,14 @@ header#mainheader {
  	background-color: @white;
  }
 
- article#blog, article#app {
+ article#start, article#app {
  	width: 440px;
  	float:left;
  	border-right: 1px solid @grey;
  }
 
  aside#index,aside#app {
- 	width: 230px;
+ 	width: 220px;
  	float: left;
  	margin-left: 20px;
  	display: block;
@@ -225,3 +225,12 @@ nav#mainnav > ul > li {
  aside#app img {
  	width: 200px !important;
  }
+
+   /** --------------------------------------------------------------
+ * Image Slider controller
+ * 
+ */
+
+ #active label {
+	display: inline-block;
+}
